@@ -133,7 +133,7 @@ let ExprParser = (function() {
         function getRealPos(p) {
             for (let i = 0; i < fn.length; ++i) {
                 if (p < fn[i].l) break;
-                p += fn[i].r - fn[i].l;
+                p += fn[i].r - fn[i].l - 2 - i.toString().length;
             }
             return pos + p;
         }
