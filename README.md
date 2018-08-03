@@ -5,6 +5,8 @@ This is a simple derivative calculator running in web browsers.
 
 Just enter the expression and click "Calculate Derivative". It will do it on its own.
 
+Click [here](https://hotwords123.github.io/DerivativeCalculator/) for a live demo.
+
 ~~~But I would not promise that the results are always correct :)~~~
 
 ### Ways to form a valid expression:
