@@ -18,13 +18,13 @@ Click [here](https://hotwords123.github.io/DerivativeCalculator/) for a live dem
  - Note 1: after that, they will be calculated before divisions.
  - Note 2: the operators has their normal priorities, so remember to use the parentheses "()".
  - Note 3: involutions are calculated from right to left, so use the parentheses to avoid ambiguities.
- - Note 4: just using the name "log" will not work properly. Use `log[10,...]` instead.
 
 ### Supported functions:
 
- - `sin[a]`, `cos[a]`, `tan[a]` - the trigonometric functions
+ - `sin[a]`, `cos[a]`, `tan[a]`, `cot[a]` - the trigonometric functions
+ - `asin[a]`, `acos[a]`, `atan[a]`, `acot[a]` - the anti-trigonometric functions
  - `ln[a]` - the natural logarithm
- - `log[a,b]` - logrithm
+ - `log[a,b]` - the base-b logrithm (calculated as `ln[a]/ln[b]`)
 
 ### Here are a few examples:
 
