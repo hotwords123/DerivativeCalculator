@@ -39,15 +39,7 @@ let ExprParser = (function() {
             calc(a, b) { return a.plus(b); }
         },
         {
-            opr: '+.', priority: 19, comb: 'both',
-            calc(a, b) { return a.plus(b); }
-        },
-        {
             opr: '-', priority: 10, comb: 'ltr',
-            calc(a, b) { return a.minus(b); }
-        },
-        {
-            opr: '-.', priority: 19, comb: 'ltr',
             calc(a, b) { return a.minus(b); }
         },
         {
@@ -223,7 +215,7 @@ let ExprParser = (function() {
                         if (lastType !== 1) {
                             expr.push(Expr.zero);
                             lastType = 2;
-                            pushopr(str[i] + '.', i);
+                            pushopr(str[i], i);
                             break;
                         }
                     case '*': case '/': case '^':

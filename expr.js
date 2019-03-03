@@ -464,6 +464,14 @@ FuncExpr.addFunction('ln', {
         return Expr.one.divide(a);
     }
 });
+FuncExpr.addFunction('exp', {
+    calc(a) {
+        return Math.exp(a);
+    },
+    calcDerivative(a) {
+        return new FuncExpr('exp', a);
+    }
+});
 
 class OprExpr extends Expr {
     constructor(opr, a, b) {
